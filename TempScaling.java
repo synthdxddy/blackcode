@@ -3,25 +3,31 @@ public class TempScaling {
 
 	double T = Double.parseDouble (args[0]);
 	
-	double F = (9/5)*T + 32;
-	double K = T + 273; 
+	double C, F, K;
+	if(args[1]=="C") {
+		C = T;
+		F = (9/5)*T + 32;
+		K = T + 273; 
+	}
+	else if(args[1]=="F") {
+	}
 
 System.out.println();
 	System.out.println("Welcome to our daily temperature report.");
 System.out.println();
 
-	if(T < 26){
+	if(C < 26){
 	System.out.println("It's fairly cold today.");
 	
-	}else if(T > 26 && T < 34 ){
+	}else if(C > 26 && C < 34 ){
 	System.out.println("Temperature is moderate today.");
 	
-	}else if(T>33){
+	}else if(C>33){
 	System.out.println("It is sunny and hot today.");
 }
 
 	System.out.println();
-	System.out.println("According to your input, Temperature has been defined to be " + "'" + T + "'" + " degrees on celcius scale.");
+	System.out.println("According to your input, Temperature has been defined to be " + "'" + C + "'" + " degrees on celcius scale.");
 	System.out.println();
 
 	System.out.println("Temperature in terms of Farenheit is " + "'"  + F + "F'" + " degrees.");
