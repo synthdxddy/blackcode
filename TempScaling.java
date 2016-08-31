@@ -5,19 +5,19 @@ public class TempScaling {
 
 	double C, F, K;
 	if(args[1]=="C") {
-	double C = T;
-	double	F = (9/5)*C + 32;
-	double	K = C + 273; 
+		C = T;
+		F = (9/5)*T + 32;
+		K = T + 273; 
 	}
 	else if(args[1]=="F") {
-	double	F = T;
-	double	C = (5*(F - 32)/9);
-	double	K = (5*(F - 32)/9 + 273);
+		F = T;
+		C = (5*(T - 32)/9);
+		K = (5*(T - 32)/9 + 273);
 	}
 	else if( args[1]=="K") {
-	double	K = T;
-	double	C = (K - 273);
-	double	F = (9*(K - 273)/5 + 32);
+		K = T;
+		C = (T - 273);
+		F = (9*(T - 273)/5 + 32);
 	}
 
 System.out.println();
@@ -30,7 +30,7 @@ System.out.println();
 	}else if(C > 26 && C < 34 ){
 	System.out.println("Temperature is moderate today.");
 	
-	}else if(C>33){
+	}else if(C > 33){
 	System.out.println("It is sunny and hot today.");
 }
 
