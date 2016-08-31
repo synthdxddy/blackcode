@@ -6,8 +6,8 @@ public class TempScaling {
 	double C, F, K;
 	if(args[1]=="C") {
 		C = T;
-		F = (9/5)*T + 32;
-		K = T + 273; 
+		F = (9/5)*C + 32;
+		K = C + 273; 
 	}
 	else if(args[1]=="F") {
 		F = T;
@@ -18,10 +18,6 @@ public class TempScaling {
 		K = T;
 		C = (K - 273);
 		F = (9*(K - 273)/5 + 32);
-	}
-		
-	
-		
 	}
 
 System.out.println();
