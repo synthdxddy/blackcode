@@ -18,7 +18,7 @@ public class TempScaling {
 		K = T;
 		C = (T - 273);
 		F = (9*(T - 273)/5 + 32);
-	}
+	
 
 System.out.println();
 	System.out.println("Welcome to our daily temperature report.");
@@ -32,7 +32,7 @@ System.out.println();
 	
 	}else if(C > 33){
 	System.out.println("It is sunny and hot today.");
-}
+
 
 	System.out.println();
 	System.out.println("According to your input, Temperature has been defined to be " + "'" + C + "'" + " degrees on celcius scale.");
@@ -42,5 +42,7 @@ System.out.println();
 	System.out.println();
 
 	System.out.println("Temperature recorded on Kelvin scale is " + "'" + K + "'" +" Kelvin.");
+	}
+	}
 	}
 }
