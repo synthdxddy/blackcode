@@ -4,25 +4,23 @@ public class TempScaling {
 	double T = Double.parseDouble (args[0]);
 
 	double C, F, K = Double.parseDouble (args[1]);
-	if(args[1] == C) {
+	if(args[1] == "C") {
 		C = T;
 		F = (9/5)*T + 32;
 		K = T + 273; 
 	}
-	else if(args[1] == F) {
+	else if(args[1] == "F") {
 		F = T;
 		C = (5*(T - 32)/9);
 		K = (5*(T - 32)/9 + 273);
 	}
-	else if( args[1] == K) {
+	else if( args[1] == "K") {
 		K = T;
 		C = (T - 273);
 		F = (9*(T - 273)/5 + 32);
-	
-
-System.out.println();
+	System.out.println();
 	System.out.println("Welcome to our daily temperature report.");
-System.out.println();
+	System.out.println();
 
 	if(C < 26){
 	System.out.println("It's fairly cold today.");
@@ -32,9 +30,8 @@ System.out.println();
 	
 	}else if(C > 33){
 	System.out.println("It is sunny and hot today.");
-
-
 	System.out.println();
+
 	System.out.println("According to your input, Temperature has been defined to be " + "'" + C + "'" + " degrees on celcius scale.");
 	System.out.println();
 
