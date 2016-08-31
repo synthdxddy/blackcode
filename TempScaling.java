@@ -3,21 +3,21 @@ public class TempScaling {
 
 	double T = Double.parseDouble (args[0]);
 
-	double c, f, k;
+	char c, f, k;
 	if(args[1]=="c") {
-		C = T;
-		F = (9/5)*T + 32;
-		K = T + 273; 
+	double	C = T;
+	double	F = (9/5)*T + 32;
+	double	K = T + 273; 
 	}
 	else if(args[1]=="f") {
-		F = T;
-		C = (5*(T - 32)/9);
-		K = (5*(T - 32)/9 + 273);
+	double	F = T;
+	double	C = (5*(T - 32)/9);
+	double	K = (5*(T - 32)/9 + 273);
 	}
 	else if( args[1]=="k") {
-		K = T;
-		C = (T - 273);
-		F = (9*(T - 273)/5 + 32);
+	double	K = T;
+	double	C = (T - 273);
+	double	F = (9*(T - 273)/5 + 32);
 	}
 
 System.out.println();
