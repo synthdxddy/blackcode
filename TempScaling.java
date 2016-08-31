@@ -5,19 +5,19 @@ public class TempScaling {
 
 	double C, F, K;
 	if(args[1]=="C") {
-		C = T;
-		F = (9/5)*C + 32;
-		K = C + 273; 
+	double C = T;
+	double	F = (9/5)*C + 32;
+	double	K = C + 273; 
 	}
 	else if(args[1]=="F") {
-		F = T;
-		C = (5*(F - 32)/9);
-		K = (5*(F - 32)/9 + 273);
+	double	F = T;
+	double	C = (5*(F - 32)/9);
+	double	K = (5*(F - 32)/9 + 273);
 	}
 	else if( args[1]=="K") {
-		K = T;
-		C = (K - 273);
-		F = (9*(K - 273)/5 + 32);
+	double	K = T;
+	double	C = (K - 273);
+	double	F = (9*(K - 273)/5 + 32);
 	}
 
 System.out.println();
