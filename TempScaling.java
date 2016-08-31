@@ -2,7 +2,7 @@ public class TempScaling {
 	public static void main(String[] args) {
 
 	double T = Double.parseDouble (args[0]);
-	
+
 	double C, F, K;
 	if(args[1]=="C") {
 		C = T;
@@ -10,6 +10,18 @@ public class TempScaling {
 		K = T + 273; 
 	}
 	else if(args[1]=="F") {
+		F = T;
+		C = (5*(F - 32)/9);
+		K = (5*(F - 32)/9 + 273);
+	}
+	else if( args[1]=="K") {
+		K = T;
+		C = (K - 273);
+		F = (9*(K - 273)/5 + 32);
+	}
+		
+	
+		
 	}
 
 System.out.println();
