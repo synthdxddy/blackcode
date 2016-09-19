@@ -1,0 +1,7 @@
+Describe and explain what happens when you try to compile a program HugeArray.java with the following statement:
+int n = 1000;
+int[] a = new int[n*n*n*n];
+
+ANSWER:
+The multiplication exceeds the memory limit to store the result. if we reduce n^4 to n^2, it works fine!
+when n is 200, the memory isn't sufficient enough to allocate those values.
